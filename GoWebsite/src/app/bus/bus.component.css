@@ -1,0 +1,45 @@
+form {
+    margin: 100px;
+  }
+  .input-field {
+    position: relative;
+    width: 250px;
+    height: 44px;
+    line-height: 44px;
+    /* float:left; */
+  }
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    color: #d3d3d3;
+    transition: 0.2s all;
+    cursor: text;
+  }
+  input {
+    width: 50%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    color: #111;
+  }
+  input:invalid {
+    outline: 0;
+    /* // color: #ff2300;
+    //   border-color: #ff2300; */
+  }
+  input:focus,
+  input:valid {
+    border-color: rgb(7, 26, 85);
+  }
+  input:focus~label,
+  input:valid~label {
+    font-size: 24px;
+    top: -30px;
+    color: rgb(7, 26, 85);
+  }
+  
+  
